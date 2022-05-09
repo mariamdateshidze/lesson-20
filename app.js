@@ -4,15 +4,14 @@ const submitBtn = document.querySelector('#submit-btn');
 const openModal = document.querySelector('#modal');
 const signupForm = document.querySelector('#user-signup-form');
 
-const user_id = document.querySelector('#user_id');
 const first_name = document.querySelector('#first_name');
 const last_name = document.querySelector('#last_name');
-const zip = document.querySelector('#zip');
 const personal_number = document.querySelector('#personal_number');
 const mobile_number = document.querySelector('#mobile_number');
-const gender = document.querySelector('#gender');
+const zip = document.querySelector('#zip');
 const email = document.querySelector('#email');
 const status = document.querySelector('#status');
+const gender = document.querySelector('#gender');
 
 
 modalOpenBtn.addEventListener("click", ()=>{
