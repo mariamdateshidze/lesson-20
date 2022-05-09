@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="table-content">
+            <h4>User managment</h4>
+            <button class="new-user" id="open-modal">new user</button>
+            <table class="table-box">
+                <tr>
+                    <th>ID</th>
+                    <th>email</th>
+                    <th>first_name</th>
+                    <th>last_name</th>
+                    <th>gender</th>
+                    <th>mobile</th>
+                    <th>personal_number</th>
+                    <th>zip_code</th>
+                    <th>actions</th>
+                </tr>
+            </table>       
+    
+        </div>
+
+        <div id="modal" class="modal-box">
+            <form id="user-signup-form" action="/save-user" method="post">
+                <button id="close-btn">X</button>
+                
+                <div class="form-field">
+                    <label for="first_name">Enter First Name</label>
+                    <input id="first_name" type="text" placeholder="First Name" required minlength="4">
+                
+                </div>
+                <div class="form-field">
+                    <label for="last_name">Enter Last name</label>
+                    <input id="last_name" type="text" placeholder="Last name" required>
+                    
+                </div>
+                <div class="form-field">
+                    <label for="mobile">Enter mobile</label>
+                    <input id="mobile" type="number" placeholder="Mobile" required>
+                    
+                </div>
+                <div class="form-field">
+                    <label for="personal_number">personal_number</label>
+                    <input id="personal_number" type="number" placeholder="personal_number" required>
+                    
+                </div>
+                <div class="form-field">
+                    <label for="zip">Enter Zip code</label>
+                    <input id="zip" type="number" placeholder="Zip" required>
+                    
+                </div>
+               
+                <div class="form-field">
+                    <label for="email">Enter Email</label>
+                    <input id="email" type="email" placeholder="email" required>
+                    <span class="field-error" id="email-error"></span>
+                </div>
+                <div class="form-field">
+                    <label for="status">Select status</label>
+                    <input id="status" type="text" placeholder="status" required>
+                   
+                </div>
+                <div class="form-field">
+                    <label for="position">Select position</label>
+                    <select id="status" required="">
+                        <option value="">Choose status</option>
+                        <option value="active">Active</option>
+                        <option value="inactive">InActive</option>
+                    </select>
+                   
+                </div>
+    
+                <div class="form-field">
+                    <label for="gender">Select gender</label>
+                    <select id="gender" required="">
+                        <option value="">Choose gender</option>
+                        <option value="active">male</option>
+                        <option value="inactive">female</option>
+                    </select>
+                   
+                </div>
+            
+                <button id="submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>
